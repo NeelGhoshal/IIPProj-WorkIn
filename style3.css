@@ -1,0 +1,40 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff3f1
+}
+#nav{
+    color: inherit;
+    background-color: white;
+    align-content: left;
+}
+#s1{
+    background-color: #fff3f1;
+    padding-bottom: 0%;
+}
+
+#c0{
+    padding-bottom: 0%;
+    padding-right: 0%;
+}
+#v{
+    width: 50%;
+    margin-top: -150px;
+    margin-right: 100px;
+}
+.p5Canvas{
+    width: Xu;
+    height: Yu;
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    margin-left: -(X/2)u;
+    margin-top: -(Y/2)u;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* min-height: 100vh; */
+  }
