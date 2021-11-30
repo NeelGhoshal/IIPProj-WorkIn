@@ -107,7 +107,7 @@ function draw() {
     asana = 'padmasana';
   }
   else if(poseLabel == 'C'){
-    asana = 'padmasana';
+    asana = 'adasana';
   }
   else if(poseLabel == 'D'){
     asana = 'virbhadrasana';
