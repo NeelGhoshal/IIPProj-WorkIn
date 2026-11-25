@@ -1,5 +1,7 @@
 # IIPProj
 
+**Live demo: [yogaaspire.onrender.com](https://yogaaspire.onrender.com)**
+
 Online Exercise training platform using the PoseNet library and built on p5.js as a framework. This project enables any individual to perform exercise related postures stretches with their web-cam on, the on-screen timer begins functioning only if the user performs a correct corresponding posture allowing for an easy and efficient platform for personal training.
 
 Example Instance:
