@@ -1,0 +1,10 @@
+services:
+  - type: web
+    runtime: static
+    name: yogaaspire
+    buildCommand: mkdir -p dist && cp -r frontend/. dist/ && cp -r model dist/ && cp logo.png dist/
+    staticPublishPath: dist
+    envVars:
+      # The site has no npm build; the root package.json is unused.
+      - key: SKIP_INSTALL_DEPS
+        value: "true"

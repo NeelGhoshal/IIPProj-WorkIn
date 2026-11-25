@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice | YogaAspire</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Mukta:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="practice">
+  <header class="bar"><a class="brand" href="./">YogaAspire</a><a class="barlink" href="./">All poses</a></header>
+  <main class="room" id="room" data-state="idle">
+    <div class="stage">
+      <video id="cam" width="640" height="480" playsinline muted></video>
+      <canvas id="draw" width="640" height="480"></canvas>
+      <div class="veil" id="veil">
+        <p id="veilText">Stand back far enough for your whole body to fit in the frame.</p>
+        <button id="start" type="button">Turn on camera</button>
+      </div>
+    </div>
+    <aside class="guide">
+      <div class="target" id="target"></div>
+      <h1 id="name"></h1>
+      <p id="cue"></p>
+      <div class="timer" role="timer" aria-label="Seconds held">
+        <span id="secs">0.0</span><span class="of">of <span id="goal">30</span> seconds held</span>
+        <div class="track"><i id="fill"></i></div>
+      </div>
+      <p class="status" id="status" aria-live="polite">Camera off</p>
+      <div class="actions">
+        <button id="reset" type="button">Restart timer</button>
+        <a id="next" href="#">Next pose</a>
+      </div>
+    </aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js" crossorigin="anonymous" defer></script>
+  <script type="module" src="practice.js"></script>
+</body>
+</html>
